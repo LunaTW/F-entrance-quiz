@@ -1,26 +1,26 @@
 import React, { Component } from 'react';
-import StudentGroupRow from '../Components/StudentGroupRow/StudentGroupRow';
+import StudentList from '../Components/StudentList/StudentList';
+import StudnetGroupRow from '../Components/StudentGroupRow/StudentGroupRow';
 
 class GroupList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      students: ['Luna', 'someone'],
       groups: [
-        ['student1'],
-        ['student2'],
-        ['student3'],
-        ['student4'],
-        ['student5'],
-        ['student6'],
-        ['student7'],
-        ['student8'],
+        ['trainee1'],
+        ['trainee2'],
+        ['trainee3'],
+        ['trainee4'],
+        ['trainee5'],
+        ['trainee6'],
+        ['trainee7'],
+        ['trainee8'],
       ],
     };
   }
 
   render() {
-    const { students, groups } = this.state;
+    const { groups } = this.state;
 
     return (
       <div className="groups">
@@ -30,17 +30,12 @@ class GroupList extends Component {
         </session>
         <session>
           {groups.map((groupStudent, index) => (
-            <StudentGroupRow groupStudent={groupStudent} groupIndex={index} key={index} />
+            <StudnetGroupRow groupStudent={groupStudent} groupIndex={index} key={index} />
           ))}
         </session>
         <session>
           <h3>学员列表</h3>
-          {students.map((studentName, index) => (
-            <div className="student-name" key={index}>
-              {' '}
-              {index + 1}.{studentName}{' '}
-            </div>
-          ))}
+          <StudentList />
         </session>
       </div>
     );

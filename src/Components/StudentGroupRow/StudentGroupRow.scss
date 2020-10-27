@@ -1,0 +1,35 @@
+.student-group-row {
+  width: 100%;
+  border: #929aab 1px solid;
+  margin-bottom: 20px;
+  height: 100px;
+}
+
+.group-name {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 15px;
+  background: #929aab;
+}
+
+.student-names {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  aligin-items: center;
+  height: 250px;
+  padding: 0 20px;
+}
+
+.student-name {
+  width: 80px;
+  background: #eeeeee;
+  height: 30px;
+  min-width: 100px;
+  padding: 5px 10px;
+  margin: 20px 20px;
+  width: auto;
+}

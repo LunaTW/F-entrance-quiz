@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './StudentGroupRow.scss';
 
 class StudentGroupRow extends Component {
   render() {
